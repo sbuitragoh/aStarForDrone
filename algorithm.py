@@ -76,23 +76,22 @@ def graphroute(route, goal, nodes, start):
     fig = plt.figure(figsize=(12, 12))
     ax = fig.add_subplot(111, projection='3d')
 
-    #x_trace = []
-    #y_trace = []
-    #z_trace = []
+    # x_trace = []
+    # y_trace = []
+    # z_trace = []
 
-    #for node in nodes:
-    #    ax.scatter3D(node[0], node[1], node[2], marker="o", color="black", s=1)
-        #x_trace.append(node[0])
-        #y_trace.append(node[1])
-        #z_trace.append(node[2])
-
+    # for node in nodes:
+    #   ax.scatter3D(node[0], node[1], node[2], marker="o", color="black", s=1)
+    #   x_trace.append(node[0])
+    #   y_trace.append(node[1])
+    #   z_trace.append(node[2])
 
     ax.scatter3D(goal[0], goal[1], goal[2], marker="*", color="green", s=100)
     ax.scatter3D(start[0], start[1], start[2], marker="*", color="red", s=100)
     ax.plot3D(x_coords, y_coords, z_coords, color="blue")
-    #ax.plot3D(x_trace, y_trace, z_trace, alpha=0.5, color="gray")
+    # ax.plot3D(x_trace, y_trace, z_trace, alpha=0.5, color="gray")
     
-    #plt.grid(color='gray', linestyle='-', linewidth=0.5)
+    # plt.grid(color='gray', linestyle='-', linewidth=0.5)
     plt.show()
 
-    return False
+    return None
